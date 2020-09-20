@@ -43,7 +43,9 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:3000").then((response) => response);
+    fetch("https://stormy-wildwood-86341.herokuapp.com").then(
+      (response) => response
+    );
   }
 
   inputChangeHandler = (event) => {
