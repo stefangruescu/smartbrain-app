@@ -42,12 +42,6 @@ class App extends Component {
     this.state = initialState;
   }
 
-  componentDidMount() {
-    fetch("https://stormy-wildwood-86341.herokuapp.com").then(
-      (response) => response
-    );
-  }
-
   inputChangeHandler = (event) => {
     this.setState({ input: event.target.value });
   };
